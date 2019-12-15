@@ -11,11 +11,11 @@
 int SmallestNumber(std::list<int> numbers) {
     // This is finds smallest number in a list
 
-    int lastNumber = 0;
+    int lastNumber = 100;
     int smallest = 0;
 
     for (int number : numbers) {
-        if (number > lastNumber) {
+        if (number < lastNumber) {
             smallest = number;
             lastNumber = number;
         }
@@ -45,5 +45,5 @@ main() {
     smallest = SmallestNumber(numbers);
 
     // output
-    std::cout << "\nThe largest is " << smallest << std::endl;
+    std::cout << "\nThe smallest is " << smallest << std::endl;
 }
