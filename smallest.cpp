@@ -42,7 +42,7 @@ main() {
         // output
         std::cout << number << std::endl;
     }
-    largest = SmallestNumber(numbers);
+    smallest = SmallestNumber(numbers);
 
     // output
     std::cout << "\nThe largest is " << smallest << std::endl;
